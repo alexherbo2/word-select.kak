@@ -26,9 +26,13 @@ word-movement-map previous b
 ## Commands
 
 - `word-movement-next-word`: Select next word
+- `word-movement-next-word-extending`: Extend to next word
 - `word-movement-next-big-word`: Select next WORD
+- `word-movement-next-big-word-extending`: Extend to next WORD
 - `word-movement-previous-word`: Select previous word
+- `word-movement-previous-word-extending`: Extend to previous word
 - `word-movement-previous-big-word`: Select previous WORD
+- `word-movement-previous-big-word-extending`: Extend to previous WORD
 - `word-movement-map {direction} {key}`: Generate a word movement mapping with `direction` and `key` arguments
 
 [Kakoune]: https://kakoune.org
