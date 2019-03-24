@@ -32,6 +32,7 @@ define-command -hidden word-movement -params 3 %{
     } catch %{
       execute-keys ';'
     }
+    execute-keys "<a-:>%arg(1)"
   }
 }
 
