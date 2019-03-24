@@ -9,10 +9,19 @@ define-command word-movement-previous-word-extending -docstring 'Extend to previ
 define-command word-movement-previous-big-word-extending -docstring 'Extend to previous WORD' 'word-movement-extending previous-big-word'
 
 define-command -hidden word-movement-extending -params 1 %{
-  evaluate-commands -save-regs '^' %{
+  evaluate-commands -itersel -save-regs '/^' %{
+    execute-keys -save-regs '' '<a-*>'
+    set-register / "\A%reg(/)\z"
     execute-keys -save-regs '' 'Z'
     evaluate-commands "word-movement-%arg(1)"
     execute-keys '<a-z>u'
+    try %{
+      execute-keys '<a-K><ret>'
+    } catch %{
+      evaluate-commands "word-movement-%arg(1)"
+      evaluate-commands "word-movement-%arg(1)"
+      execute-keys '<a-z>u'
+    }
   }
 }
 
