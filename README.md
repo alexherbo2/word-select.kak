@@ -6,6 +6,8 @@
 
 > Simpler word movements for [Kakoune].
 
+[![asciicast](https://asciinema.org/a/236149.svg)](https://asciinema.org/a/236149)
+
 ## Installation
 
 ### [Pathogen]
