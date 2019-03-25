@@ -14,7 +14,7 @@ define-command -hidden word-movement-extending -params 1 %{
     set-register / "\A%reg(/)\z"
     execute-keys -save-regs '' 'Z'
     evaluate-commands "word-movement-%arg(1)"
-    execute-keys '<a-z>u'
+    execute-keys ';<a-z>u'
     try %{
       execute-keys '<a-K><ret>'
     } catch %{
