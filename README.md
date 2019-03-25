@@ -35,7 +35,14 @@ word-movement-map previous b
 - `word-movement-previous-big-word-extending`: Extend to previous WORD
 - `word-movement-map {direction} {key}`: Generate a word movement mapping with `direction` and `key` arguments
 
+## About
+
+The extension was created after discussing with [@occivink] about the [controversial mappings]
+and the word movements in general.
+
 [Kakoune]: https://kakoune.org
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
 [Pathogen]: https://github.com/alexherbo2/pathogen.kak
+[Controversial mappings]: https://github.com/Delapouite/kakoune-buffers#more-controversial-mappings
+[@occivink]: https://github.com/occivink
