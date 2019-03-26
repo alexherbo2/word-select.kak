@@ -21,6 +21,7 @@ pathogen-infect /home/user/repositories/github.com/alexherbo2/word-movement.kak
 ``` kak
 word-movement-map next w
 word-movement-map previous b
+word-movement-map skip e
 ```
 
 ## Commands
@@ -33,7 +34,11 @@ word-movement-map previous b
 - `word-movement-previous-word-extending`: Extend to previous word
 - `word-movement-previous-big-word`: Select previous WORD
 - `word-movement-previous-big-word-extending`: Extend to previous WORD
-- `word-movement-map {direction} {key}`: Generate a word movement mapping with `direction` and `key` arguments
+- `word-movement-skip-next-word`: Skip next word
+- `word-movement-skip-next-word-extending`: Extend skip-next-word
+- `word-movement-skip-previous-word`: Skip previous word
+- `word-movement-skip-previous-word-extending`: Extend skip-previous-word
+- `word-movement-map {next,previous,skip} {key}`: Generate a word movement mapping with `command` and `key` arguments
 
 ## About
 
