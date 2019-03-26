@@ -19,8 +19,10 @@ pathogen-infect /home/user/repositories/github.com/alexherbo2/word-movement.kak
 ## Usage
 
 ``` kak
+# Move b to q, so that
+# q, w, e actions are aligned
+word-movement-map previous q
 word-movement-map next w
-word-movement-map previous b
 word-movement-map skip e
 ```
 
