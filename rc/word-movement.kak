@@ -8,10 +8,10 @@ define-command word-movement-next-big-word-extending -docstring 'Extend to next 
 define-command word-movement-previous-word-extending -docstring 'Extend to previous word' 'word-movement-extending previous-word'
 define-command word-movement-previous-big-word-extending -docstring 'Extend to previous WORD' 'word-movement-extending previous-big-word'
 
-define-command word-movement-skip-next-word -docstring 'Skip next word' 'execute-keys \"_/\s+<ret>'
-define-command word-movement-skip-next-word-extending -docstring 'Extend skip-next-word' 'execute-keys \"_?\s+<ret>'
-define-command word-movement-skip-previous-word -docstring 'Skip previous word' 'execute-keys \"_<a-/>\s+<ret>'
-define-command word-movement-skip-previous-word-extending -docstring 'Extend skip-previous-word' 'execute-keys \"_<a-?>\s+<ret>'
+define-command word-movement-skip-next-word -docstring 'Skip next word' 'execute-keys "<a-:>""_/\s+<ret>"'
+define-command word-movement-skip-next-word-extending -docstring 'Extend skip-next-word' 'execute-keys "<a-:>""_?\s+<ret>"'
+define-command word-movement-skip-previous-word -docstring 'Skip previous word' 'execute-keys "<a-:><a-;>""_<a-/>\s+<ret>"'
+define-command word-movement-skip-previous-word-extending -docstring 'Extend skip-previous-word' 'execute-keys "<a-:><a-;>""_<a-?>\s+<ret>"'
 
 define-command -hidden word-movement-extending -params 1 %{
   evaluate-commands -itersel -save-regs '/^' %{
