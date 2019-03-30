@@ -65,21 +65,21 @@ define-command word-movement-map -params 2 -docstring 'Generate a word movement 
 }}
 
 define-command -hidden word-movement-map-word -params 2 %{
-  map global normal %arg(2) ":<space>word-movement-%arg(1)-word<ret>"
-  map global normal "<a-%arg(2)>" ":<space>word-movement-%arg(1)-big-word<ret>"
+  map global normal %arg(2) ": word-movement-%arg(1)-word<ret>"
+  map global normal "<a-%arg(2)>" ": word-movement-%arg(1)-big-word<ret>"
   evaluate-commands -save-regs 'K' %{
     set-register K %sh(echo "$2" | tr '[:lower:]' '[:upper:]')
-    map global normal %reg(K) ":<space>word-movement-%arg(1)-word-extending<ret>"
-    map global normal "<a-%reg(K)>" ":<space>word-movement-%arg(1)-big-word-extending<ret>"
+    map global normal %reg(K) ": word-movement-%arg(1)-word-extending<ret>"
+    map global normal "<a-%reg(K)>" ": word-movement-%arg(1)-big-word-extending<ret>"
   }
 }
 
 define-command -hidden word-movement-map-skip-word -params 1 %{
-  map global normal %arg(1) ':<space>word-movement-skip-next-word<ret>'
-  map global normal "<a-%arg(1)>" ':<space>word-movement-skip-previous-word<ret>'
+  map global normal %arg(1) ': word-movement-skip-next-word<ret>'
+  map global normal "<a-%arg(1)>" ': word-movement-skip-previous-word<ret>'
   evaluate-commands -save-regs 'K' %{
     set-register K %sh(echo "$1" | tr '[:lower:]' '[:upper:]')
-    map global normal %reg(K) ':<space>word-movement-skip-next-word-extending<ret>'
-    map global normal "<a-%reg(K)>" ':<space>word-movement-skip-previous-word-extending<ret>'
+    map global normal %reg(K) ': word-movement-skip-next-word-extending<ret>'
+    map global normal "<a-%reg(K)>" ': word-movement-skip-previous-word-extending<ret>'
   }
 }
