@@ -1,6 +1,7 @@
 # Word Movement
 
 [![IRC][IRC Badge]][IRC]
+[![Discuss][Discuss Badge]][Discuss]
 
 ###### [Usage](#usage) | [Documentation](#commands) | [Contributing](CONTRIBUTING)
 
@@ -50,6 +51,8 @@ and the word movements in general.
 [Kakoune]: https://kakoune.org
 [IRC]: https://webchat.freenode.net?channels=kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
+[Discuss]: https://discuss.kakoune.com/t/word-movements/405
+[Discuss Badge]: https://img.shields.io/badge/Discuss-405-green.svg
 [Pathogen]: https://github.com/alexherbo2/pathogen.kak
 [Controversial mappings]: https://github.com/Delapouite/kakoune-buffers#more-controversial-mappings
 [@occivink]: https://github.com/occivink
