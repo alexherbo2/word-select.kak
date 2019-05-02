@@ -54,13 +54,13 @@ define-command word-movement-map -params 2 -docstring 'Generate a word movement 
   case "$1" in
     previous|next)
       printf 'word-movement-map-word %s %s' "$1" "$2"
-    ;;
+      ;;
     skip)
       printf 'word-movement-map-skip-word %s' "$2"
-    ;;
+      ;;
     *)
       printf 'fail Usage: word-movement-map {next,previous,skip} {key}'
-    ;;
+      ;;
   esac
 }}
 
