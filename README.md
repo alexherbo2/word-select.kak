@@ -49,7 +49,7 @@ The extension was created after discussing with [@occivink] about the [controver
 and the word movements in general.
 
 [Kakoune]: https://kakoune.org
-[IRC]: https://webchat.freenode.net?channels=kakoune
+[IRC]: https://webchat.freenode.net/#kakoune
 [IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
 [Discuss]: https://discuss.kakoune.com/t/word-movements/405
 [Discuss Badge]: https://img.shields.io/badge/Discuss-405-green.svg
