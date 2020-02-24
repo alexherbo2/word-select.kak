@@ -9,7 +9,7 @@ provide-module word-select %{
     word-select-implementation '<a-;>' 'w' '<a-/>'
   }
   define-command word-select-previous-big-word -docstring 'Select WORD or previous WORD' %{
-    word-select-implementation '<a-:>' '<a-w>' '<a-/>'
+    word-select-implementation '<a-;>' '<a-w>' '<a-/>'
   }
   # Arguments are commands for direction(1), select-word(2) and select-next-word(3).
   # Example: word-select-implementation '<a-:>' 'w' '/'
