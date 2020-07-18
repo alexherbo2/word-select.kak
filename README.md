@@ -19,20 +19,4 @@ map global normal b ': word-select-previous-word<ret>'
 map global normal <a-b> ': word-select-previous-big-word<ret>'
 ```
 
-### More controversial mappings
-
-Move <kbd>b</kbd> to <kbd>q</kbd>, so that <kbd>q</kbd><kbd>w</kbd><kbd>e</kbd> actions are aligned.
-
-``` kak
-# Move macros to ^
-map global normal ^ q
-map global normal <a-^> Q
-
-# Move [b] to [q], so that [qwe] actions are aligned.
-map global normal q ': word-select-previous-word<ret>'
-map global normal <a-q> ': word-select-previous-big-word<ret>'
-map global normal Q B
-map global normal <a-Q> <a-B>
-```
-
 [Kakoune]: https://kakoune.org
