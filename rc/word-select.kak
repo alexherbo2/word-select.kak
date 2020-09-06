@@ -32,5 +32,3 @@ provide-module word-select %{
     }
   }
 }
-
-require-module word-select

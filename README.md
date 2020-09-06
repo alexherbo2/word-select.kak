@@ -6,6 +6,10 @@ Map <kbd>w</kbd> to move by word instead of word start.
 
 Add [`word-select.kak`](rc/word-select.kak) to your autoload or source it manually.
 
+``` kak
+require-module word-select
+```
+
 ## Usage
 
 Map <kbd>w</kbd> to `word-select-next-word` to move by word instead of word start.
