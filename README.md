@@ -2,6 +2,12 @@
 
 Map <kbd>w</kbd> to move by word instead of word start.
 
+## Dependencies
+
+- [prelude.kak]
+
+[prelude.kak]: https://github.com/alexherbo2/prelude.kak
+
 ## Installation
 
 Add [`word-select.kak`](rc/word-select.kak) to your autoload or source it manually.
