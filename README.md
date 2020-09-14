@@ -1,6 +1,6 @@
 # word-select.kak
 
-Map <kbd>w</kbd> to move by word instead of word start.
+Make <kbd>w</kbd> to move by word instead of word start.
 
 ## Dependencies
 
