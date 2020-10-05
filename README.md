@@ -18,15 +18,8 @@ require-module word-select
 
 ## Usage
 
-Map <kbd>w</kbd> to `word-select-next-word` to move by word instead of word start.
+Enable word-select with `word-select-add-mappings`.
 
-## Configuration
-
-``` kak
-map global normal w ': word-select-next-word<ret>'
-map global normal <a-w> ': word-select-next-big-word<ret>'
-map global normal b ': word-select-previous-word<ret>'
-map global normal <a-b> ': word-select-previous-big-word<ret>'
-```
+Or manually map <kbd>w</kbd> and its variants to `word-select-next-word` to move by word instead of word start.
 
 [Kakoune]: https://kakoune.org

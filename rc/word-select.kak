@@ -1,4 +1,12 @@
 provide-module word-select %{
+  # Add mappings
+  define-command word-select-add-mappings -docstring 'Add word-select mappings' %{
+    map -docstring 'Next word' global normal w ': word-select-next-word<ret>'
+    map -docstring 'Next big word' global normal <a-w> ': word-select-next-big-word<ret>'
+    map -docstring 'Previous word' global normal b ': word-select-previous-word<ret>'
+    map -docstring 'Previous big word' global normal <a-b> ': word-select-previous-big-word<ret>'
+  }
+
   # Select word or next word
   define-command word-select-next-word -docstring 'Select word or next word' %{
     word-select-implementation '<a-:>' 'w' '/'
