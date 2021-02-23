@@ -43,11 +43,8 @@ provide-module word-select %{
       # Compare initial and current selections_desc
       # If same, select the next word.
       evaluate-commands %sh{
-        # Prelude
-        . "$kak_opt_prelude_path"
-
         if [ "$kak_selections_desc" = "$kak_reg_s" ]; then
-          kak_escape execute-keys "${3}\w<ret><a-i>${2}${1}"
+          kcr escape -- execute-keys "${3}\w<ret><a-i>${2}${1}"
         fi
       }
     }
