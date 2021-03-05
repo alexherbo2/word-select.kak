@@ -2,12 +2,6 @@
 
 Make <kbd>w</kbd> to move by word instead of word start.
 
-## Dependencies
-
-- [kakoune.cr]
-
-[kakoune.cr]: https://github.com/alexherbo2/kakoune.cr
-
 ## Installation
 
 Add [`word-select.kak`](rc/word-select.kak) to your autoload or source it manually.

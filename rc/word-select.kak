@@ -44,7 +44,7 @@ provide-module word-select %{
       # If same, select the next word.
       evaluate-commands %sh{
         if [ "$kak_selections_desc" = "$kak_reg_s" ]; then
-          kcr escape -- execute-keys "${3}\w<ret><a-i>${2}${1}"
+          printf 'execute-keys "%s\w<ret><a-i>%s%s"' "$3" "$2" "$1"
         fi
       }
     }
